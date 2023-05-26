@@ -1,0 +1,35 @@
+/* -------------- IMPORTS -------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* -------------- VARIABLE -------------- */
+:root{
+    /* COLORS */
+    --primary: #e8e5df;
+    --secondary: #faf9f8;
+    --dark: #000000;
+
+
+    /* SIZE */
+    --sizeh1: 6rem;
+    --sizeh2: 5rem;
+    --sizeh3: 4rem;
+    --sizeh4: 3rem;
+    --sizeh5: 2rem;
+    --sizeText: 2rem;
+
+    --fontTitle: 'Poiret One', cursive;
+    --fontText: 'Forum', cursive;
+}
+/* -------------- BODY -------------- */
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0 40px;
+}
