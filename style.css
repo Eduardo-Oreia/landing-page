@@ -67,19 +67,30 @@ body{
     position: absolute;
     right: 10rem;
 }
-.icons-social-media i{
+.icons-social-media a{
     font-size: 2.7rem;
     padding: 1rem;
+    color: var(--dark);
 }
 .icons-social-media i:hover{
     color: var(--green);
     cursor: pointer;
 }
-.fa-bars{
+.btn-toggle{
     display: none;
+    font-size: 2.7rem;
+    padding: 1rem;
+    color: var(--dark);
+    background-color: transparent;
+    border: none;
 }
-.fa-xmark{
+.btn-close{
     display: none;
+    font-size: 2.7rem;
+    padding: 1rem;
+    color: var(--dark);
+    background-color: transparent;
+    border: none;
 }
 
 /* -------------- BACKGROUND -------------- */
@@ -154,9 +165,159 @@ body{
 }
 .photo-one img{
     width: 100%;
+    height: auto;
     border-radius: 2rem ;
 }
 .photo-two img{
     width: 100%;
     border-radius: 2rem;
+}
+
+/* -------------- MEDIUM DEVICE -------------- */
+@media (max-width:1200px){
+    .main{
+        width: 100%;
+        height: calc(100vh - 6rem);
+        display: flex;
+        padding: 1rem 3rem;
+    }
+    .section-text{
+        width: 70%;
+        height: 100%;
+        padding: 1rem;
+    }
+    .section-text h1{
+        font-size: var(--sizeh1);
+        text-transform: uppercase;
+        margin-top: 2%;
+        font-family: var(--fontTitle);
+    }
+
+}
+/* -------------- MEDIUM DEVICE -------------- */
+@media (max-width: 800px){
+    .main{
+        height: auto;
+        flex-direction: column;
+        padding: 1rem 0;
+        background-color: var(--primary);
+    }
+    .header{
+        background-color: var(--dark);
+    }
+    /* ----- menu ----- */
+    .menu{
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background-color: var(--dark);
+    }
+    .menu-toggle li{
+        padding: 2rem 0;
+    }
+
+    .menu-toggle a{
+        padding: 0 1rem;
+        font-size: 3rem;
+        color: var(--secondary);
+        border: none;
+    }
+
+    /* ----- icons ----- */
+    .icons-social-media{
+        position: absolute;
+        right: 0rem;
+        top: 0;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 30%;
+    }
+    .icons-social-media a{
+        font-size: 3rem;
+        margin-top: 2px;
+        color: var(--secondary);
+    }
+    /* ----- btns ----- */
+    .btn-toggle{
+        display: block;
+        font-size: 3rem;
+        color: var(--secondary);
+    }
+    .btn-close{
+        display: none;
+        font-size: 3rem;
+        color: var(--secondary);
+    }
+    .btn-close-open{
+        display: block;
+    }
+    .btn-toggle-remove{
+        display: none;
+    }
+    /* ----- background ----- */
+    .background{
+        display: none;
+    }
+
+    /* ----- section text ----- */
+    .section-text{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .section-text h1{
+        margin-top: 5%;
+        font-size: 12rem;
+    }
+    .section-description p{
+        font-size: 3.5rem;
+    }
+    .btn-buy{
+        font-size: var(--sizeh4);
+    }
+
+    /* ----- photos ----- */
+    .photos{
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+        height: auto;
+    }
+    .photo-one{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .photo-two{
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+
+}
+
+/* -------------- SMALL DEVICE -------------- */
+@media (max-width: 480px){
+    .menu-toggle{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .menu-toggle a{
+        font-size: 2rem;
+    }
+    .section-text h1{
+        font-size: 7rem;
+    }
+    .section-description p{
+        font-size: 2rem;
+    }
+    .btn-buy{
+        font-size: var(--sizeh5);
+    }
 }
