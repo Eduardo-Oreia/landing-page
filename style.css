@@ -51,6 +51,7 @@ body{
 }
 .menu a:hover{
     color: var(--green);
+    border-bottom: 1px solid black;
 }
 .menu a{
     font-size: var(--sizeText);
@@ -58,6 +59,7 @@ body{
     text-transform: uppercase;
     color: var(--dark);
     font-family: var(--fontText);
+    transition: 700ms ease;
 }
 
 /* ----- icons ----- */
@@ -115,6 +117,22 @@ body{
     margin-top: 5%;
     font-size: var(--sizeText);
     font-family: var(--fontText);
+}
+.btn-buy{
+    font-size: var(--sizeText);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--dark);
+    background-color: transparent;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: var(--fontText);
+    margin-top: 2rem;
+}
+.btn-buy:hover{
+    background-color: var(--dark);
+    color: var(--secondary);
+    transition: 1s ease;
 }
 
 /* ----- photos ----- */
