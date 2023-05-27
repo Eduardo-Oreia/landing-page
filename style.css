@@ -16,7 +16,7 @@
 
 
     /* SIZE */
-    --sizeh1: 6rem;
+    --sizeh1: 10rem;
     --sizeh2: 5rem;
     --sizeh3: 4rem;
     --sizeh4: 3rem;
@@ -31,5 +31,121 @@ html{
     font-size: 62.5%;
 }
 body{
-    margin: 0 40px;
+    background-color: var(--secondary);
+}
+/* -------------- HEADER -------------- */
+.header{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu li{
+    list-style: none;
+    padding: 0 1rem;
+}
+.menu a:hover{
+    color: red;
+}
+.menu a{
+    font-size: var(--sizeText);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+/* ----- icons ----- */
+.icons-social-media{
+    position: absolute;
+    right: 10rem;
+}
+.icons-social-media i{
+    font-size: 2.7rem;
+    padding: 1rem;
+}
+.icons-social-media i:hover{
+    color: green;
+    cursor: pointer;
+}
+.fa-bars{
+    display: none;
+}
+.fa-xmark{
+    display: none;
+}
+
+/* -------------- BACKGROUND -------------- */
+.background{
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 65%;
+    background-color: var(--primary);
+    z-index: -1;
+}
+
+
+/* -------------- HOME -------------- */
+.main{
+    width: 100%;
+    height: calc(100vh - 6rem);
+    background-color: rgba(0, 128, 0, 0.393);
+    display: flex;
+    padding: 0 8rem;
+}
+
+/* ----- section ----- */
+.section-text{
+    width: 70%;
+    height: 100%;
+    background-color: rgba(255, 192, 203, 0.9);
+    padding: 1rem;
+}
+.section-text h1{
+    font-size: var(--sizeh1);
+    text-transform: uppercase;
+    margin-top: 10%;
+    font-family: var(--fontTitle);
+}
+.section-description p{
+    margin-top: 5%;
+    font-size: var(--sizeText);
+    font-family: var(--fontText);
+}
+
+/* ----- photos ----- */
+.photos{
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    gap: 0 2rem;
+    padding: 2rem;
+    align-items: center;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+}
+.photo-one{
+    width: 100%;
+    height: 95%;
+    background-color: teal;
+    grid-area: item1;
+}
+.photo-two{
+    width: 90%;
+    grid-area: item2;
+    height: 80%;
+    background-color: tomato;
+}
+.photo-three{
+    width: 80%;
+    height: 80%;
+    background-color: powderblue;
+    grid-area: item3;
 }
