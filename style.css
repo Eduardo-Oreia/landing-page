@@ -13,6 +13,7 @@
     --primary: #e8e5df;
     --secondary: #faf9f8;
     --dark: #000000;
+    --green: #199419;
 
 
     /* SIZE */
@@ -49,13 +50,14 @@ body{
     padding: 0 1rem;
 }
 .menu a:hover{
-    color: red;
+    color: var(--green);
 }
 .menu a{
     font-size: var(--sizeText);
     text-decoration: none;
     text-transform: uppercase;
     color: var(--dark);
+    font-family: var(--fontText);
 }
 
 /* ----- icons ----- */
@@ -68,7 +70,7 @@ body{
     padding: 1rem;
 }
 .icons-social-media i:hover{
-    color: green;
+    color: var(--green);
     cursor: pointer;
 }
 .fa-bars{
@@ -93,22 +95,20 @@ body{
 .main{
     width: 100%;
     height: calc(100vh - 6rem);
-    background-color: rgba(0, 128, 0, 0.393);
     display: flex;
-    padding: 0 8rem;
+    padding: 1rem 8rem;
 }
 
 /* ----- section ----- */
 .section-text{
     width: 70%;
     height: 100%;
-    background-color: rgba(255, 192, 203, 0.9);
     padding: 1rem;
 }
 .section-text h1{
     font-size: var(--sizeh1);
     text-transform: uppercase;
-    margin-top: 10%;
+    margin-top: 8%;
     font-family: var(--fontTitle);
 }
 .section-description p{
@@ -121,31 +121,24 @@ body{
 .photos{
     width: 100%;
     height: 100%;
-    background-color: orange;
     display: grid;
-    grid-template-columns: 1fr 40%;
-    gap: 0 2rem;
-    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
     align-items: center;
-    grid-template-areas: 
-    "item1 item2"
-    "item1 item3";
 }
 .photo-one{
     width: 100%;
-    height: 95%;
-    background-color: teal;
-    grid-area: item1;
+    padding: 1rem;
 }
 .photo-two{
-    width: 90%;
-    grid-area: item2;
-    height: 80%;
-    background-color: tomato;
+    width: 100%;
+    padding: 1rem;
 }
-.photo-three{
-    width: 80%;
-    height: 80%;
-    background-color: powderblue;
-    grid-area: item3;
+.photo-one img{
+    width: 100%;
+    border-radius: 2rem ;
+}
+.photo-two img{
+    width: 100%;
+    border-radius: 2rem;
 }
