@@ -21,5 +21,5 @@ https://eduardo-oreia.github.io/landing-page/
 
 ## Apêndice
 
-Esta em um processo de Atualização e novas funções
+É uma pagina simples, com algumas funções, mas ao decorrer do tempo vou melhorando ela e deixando mais completa.
 
